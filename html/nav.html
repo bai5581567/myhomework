@@ -1,0 +1,103 @@
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>nav</title>
+		<link rel="stylesheet" type="text/css" href="../css/css.css"/>
+				<script type="text/javascript">
+				
+
+		function massage()
+		{
+			alert("上淘宝，就购了。")
+		}
+		
+		</script>
+	</head>
+
+		
+	<body onload="massage()">
+
+		<div id="nav">
+			<ul class="mainul">
+				<p>网上购物去哪里？</p>
+				<li><a href="#">百货上淘宝</a><span>（可能有假货）</span>
+					<ul>
+						<li class="sec"><a href="#">服装内衣</a>
+							<ul>
+								<li><a href="#">流行女装</a></a></li>
+								<li><a href="#">最爱连衣裙</a></li>
+								<li><a href="#">潮流男装</a></li>
+								<li><a href="#">性感内衣</a></li>
+							</ul>
+						</li>
+						<li><a href="#">鞋包配饰</a>
+							<ul>
+								<li><a href="#">时尚女鞋</a></a></li>
+								<li><a href="#">流行男鞋</a></li>
+								<li><a href="#">潮流男装</a></li>
+								<li><a href="#">性感内衣</a></li>
+							</ul>
+						</li>
+						<li><a href="#">运动户外</a>
+							<ul>
+								<li><a href="#">跑步健身</a></li>
+								<li><a href="#">户外运动</a></li>
+								<li><a href="#">钓鱼用品</li>
+								<li><a href="#">扎堆钓伴</a></li>
+							</ul>
+						</li>
+					
+					</ul>
+				</li>
+			</ul>
+			
+			<ul class="mainul">
+				<li><a href="#">数码上京东</a><span>（东西有点贵）</span>
+					<ul>
+						
+						<li><a href="#">珠宝手表</a>
+							<ul>
+								<li><a href="#">珠宝频道</a></a></li>
+								<li><a href="#">眼睛频道</li>
+								<li><a href="#">手表频道</a></li>
+								<li><a href="#">配饰街</a></li>
+							</ul>
+						</li>
+						<li><a href="#">手机数码</a>
+							<ul>
+								<li><a href="#">手机频道</a></a></li>
+								<li><a href="#">国产手机</a></li>
+								<li><a href="#">笔记本频道</a></li>
+								<li><a href="#">平板频道</a></li>
+							</ul>
+						</li>
+						<li><a href="#">家电办公</a>
+							<ul>
+								<li><a href="#">洗衣机</a></li>
+								<li><a href="#">净水器</a></li>
+								<li><a href="#">足浴器</a></li>
+								<li><a href="#">空气净化</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+		function getClass(tagname, tagnameAll)
+		{ 
+		var tagname = document.getElementsByTagName("li");
+		var tagnameAll = [];
+		for (var i = 0; i < tagname.length; i++) 
+			{
+		if (tagname[i].className == "sec")
+				{
+					tagnameAll[tagnameAll.length] = tagname[i];
+				}
+			}
+			return tagnameAll;
+		}
+		</script>
+	</body>
+</html>
